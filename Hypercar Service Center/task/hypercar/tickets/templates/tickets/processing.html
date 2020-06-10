@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Processing</title>
+</head>
+<body>
+    {% for data in services.values %}
+        <div>{{data.employee_text}}: {{data.people}}</div>
+    {% endfor %}
+
+    <form method="post">{% csrf_token %}
+        <button type="submit">Process next</button>
+    </form>
+</body>
+</html>

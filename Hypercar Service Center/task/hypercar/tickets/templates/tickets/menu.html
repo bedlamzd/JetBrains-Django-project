@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+    <ol>
+        {% for link, data in services.items %}
+            <li><a target="_blank" href="/get_ticket/{{link}}">{{data.client_text}}</a></li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
